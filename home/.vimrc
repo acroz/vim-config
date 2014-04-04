@@ -5,7 +5,8 @@ execute pathogen#infect()
 set number
 
 " Colour Management
-colorscheme Tomorrow-Night
+set background=dark
+colorscheme base16-tomorrow
 if $TERM == "xterm-256color"
   set t_Co=256
 endif
