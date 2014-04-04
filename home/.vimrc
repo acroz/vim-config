@@ -1,10 +1,11 @@
 
 execute pathogen#infect()
 
+" Display line numbers
+set number
+
 " Colour Management
-
 colorscheme Tomorrow-Night
-
 if $TERM == "xterm-256color"
   set t_Co=256
 endif
@@ -13,7 +14,7 @@ endif
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
+" Auto indent on return inside braces
 let delimitMate_expand_cr=1
 
 " Use correct ctags on mac (for symbol browser)
