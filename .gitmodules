@@ -7,3 +7,6 @@
 [submodule "home/.vim/bundle/nerdcommenter"]
 	path = home/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
+[submodule "home/.vim/bundle/delimitMate"]
+	path = home/.vim/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate

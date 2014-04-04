@@ -9,13 +9,12 @@ if $TERM == "xterm-256color"
   set t_Co=256
 endif
 
-syntax on
-filetype plugin indent on
-
 " Convert tabs to spaces
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+let delimitMate_expand_cr=1
 
 " Use correct ctags on mac (for symbol browser)
 let s:uname = system("uname")
