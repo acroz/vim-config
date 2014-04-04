@@ -10,3 +10,12 @@
 [submodule "home/.vim/bundle/delimitMate"]
 	path = home/.vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate
+[submodule "home/.vim/bundle/HTML-AutoCloseTag"]
+	path = home/.vim/bundle/HTML-AutoCloseTag
+	url = https://github.com/vim-scripts/HTML-AutoCloseTag.git
+[submodule "home/.vim/bundle/supertab"]
+	path = home/.vim/bundle/supertab
+	url = http://github.com/ervandew/supertab
+[submodule "home/.vim/bundle/pyflakes"]
+	path = home/.vim/bundle/pyflakes
+	url = https://github.com/mitechie/pyflakes-pathogen.git
