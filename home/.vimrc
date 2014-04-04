@@ -5,11 +5,12 @@ execute pathogen#infect()
 set number
 
 " Colour Management
-set background=dark
-colorscheme base16-tomorrow
 if $TERM == "xterm-256color"
-  set t_Co=256
+    set t_Co=256
 endif
+let base16colorspace=256
+set background=dark
+colorscheme base16-default
 
 " Convert tabs to spaces
 set tabstop=4
