@@ -10,7 +10,7 @@ if $TERM == "xterm-256color"
 endif
 let base16colorspace=256
 set background=dark
-colorscheme base16-default
+colorscheme base16-monokai
 
 " Convert tabs to spaces
 set tabstop=4
