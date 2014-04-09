@@ -3,22 +3,22 @@
 	url = git://github.com/tpope/vim-sensible.git
 [submodule "home/.vim/bundle/taglist"]
 	path = home/.vim/bundle/taglist
-	url = https://github.com/vim-scripts/taglist.vim
+	url = git://github.com/vim-scripts/taglist.vim
 [submodule "home/.vim/bundle/nerdcommenter"]
 	path = home/.vim/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter
 [submodule "home/.vim/bundle/delimitMate"]
 	path = home/.vim/bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate
+	url = git://github.com/Raimondi/delimitMate
 [submodule "home/.vim/bundle/HTML-AutoCloseTag"]
 	path = home/.vim/bundle/HTML-AutoCloseTag
-	url = https://github.com/vim-scripts/HTML-AutoCloseTag.git
+	url = git://github.com/vim-scripts/HTML-AutoCloseTag.git
 [submodule "home/.vim/bundle/supertab"]
 	path = home/.vim/bundle/supertab
 	url = http://github.com/ervandew/supertab
 [submodule "home/.vim/bundle/pyflakes"]
 	path = home/.vim/bundle/pyflakes
-	url = https://github.com/mitechie/pyflakes-pathogen.git
+	url = git://github.com/mitechie/pyflakes-pathogen.git
 [submodule "home/.vim/bundle/base16"]
 	path = home/.vim/bundle/base16
-	url = https://github.com/chriskempson/base16-vim.git
+	url = git://github.com/chriskempson/base16-vim.git
