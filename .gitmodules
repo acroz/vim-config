@@ -15,7 +15,7 @@
 	url = git://github.com/vim-scripts/HTML-AutoCloseTag.git
 [submodule "home/.vim/bundle/supertab"]
 	path = home/.vim/bundle/supertab
-	url = http://github.com/ervandew/supertab
+	url = git://github.com/ervandew/supertab
 [submodule "home/.vim/bundle/pyflakes"]
 	path = home/.vim/bundle/pyflakes
 	url = git://github.com/mitechie/pyflakes-pathogen.git
