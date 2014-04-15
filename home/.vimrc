@@ -19,6 +19,9 @@ set expandtab
 " Auto indent on return inside braces
 let delimitMate_expand_cr=1
 
+" Apply perl syntax highlighting to .com files
+au BufNewFile,BufRead *.com set filetype=perl
+
 " Use correct ctags on mac (for symbol browser)
 let s:uname = system("uname")
 if s:uname == "Darwin\n"
