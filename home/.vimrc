@@ -9,7 +9,7 @@ if $TERM == "xterm-256color"
     set t_Co=256
 endif
 set background=dark
-colorscheme solarized
+colorscheme monokai
 
 " Convert tabs to spaces
 set tabstop=4
