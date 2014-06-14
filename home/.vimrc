@@ -11,6 +11,13 @@ endif
 set background=dark
 colorscheme monokai
 
+" Powerline
+" Requires systemwide installation, see for details:
+" http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+" Always show status line
+set laststatus=2
+
 " Convert tabs to spaces
 set tabstop=4
 set shiftwidth=4
