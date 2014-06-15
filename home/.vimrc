@@ -36,3 +36,16 @@ let s:uname = system("uname")
 if s:uname == "Darwin\n"
     let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 endif
+
+" Alias write/quit commands to allow sloppy capitals
+if has("user_commands")
+    command! -bang -nargs=? -complete=file E e<bang> <args>
+    command! -bang -nargs=? -complete=file W w<bang> <args>
+    command! -bang -nargs=? -complete=file Wq wq<bang> <args>
+    command! -bang -nargs=? -complete=file WQ wq<bang> <args>
+    command! -bang Wa wa<bang>
+    command! -bang WA wa<bang>
+    command! -bang Q q<bang>
+    command! -bang QA qa<bang>
+    command! -bang Qa qa<bang>
+endif
