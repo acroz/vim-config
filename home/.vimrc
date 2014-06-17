@@ -26,7 +26,7 @@ set expandtab
 let delimitMate_expand_cr=1
 
 " Mouse interaction
-set mouse=a
+"set mouse=a
 
 " Apply perl syntax highlighting to .com files
 au BufNewFile,BufRead *.com set filetype=perl
@@ -36,6 +36,9 @@ let s:uname = system("uname")
 if s:uname == "Darwin\n"
     let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 endif
+
+" Search recursively up directory tree for ctags files
+set tags=./tags;/,./TAGS;/
 
 " Alias write/quit commands to allow sloppy capitals
 if has("user_commands")
