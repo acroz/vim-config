@@ -21,4 +21,4 @@
 	url = git://github.com/chriskempson/base16-vim.git
 [submodule "home/.vim/bundle/vim-json"]
 	path = home/.vim/bundle/vim-json
-	url = git@github.com:elzr/vim-json.git
+	url = git://github.com/elzr/vim-json.git
