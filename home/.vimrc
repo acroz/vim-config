@@ -15,6 +15,8 @@ colorscheme monokai
 " Requires systemwide installation, see for details:
 " http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+"set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim/
+let g:airline_powerline_fonts = 1
 " Always show status line
 set laststatus=2
 
@@ -24,6 +26,9 @@ set shiftwidth=4
 set expandtab
 " Auto indent on return inside braces
 let delimitMate_expand_cr=1
+
+" Set paste switch to allow code pasting without ruining indentation
+set pastetoggle=<F2>
 
 " Mouse interaction
 "set mouse=a
@@ -52,3 +57,6 @@ if has("user_commands")
     command! -bang QA qa<bang>
     command! -bang Qa qa<bang>
 endif
+
+" Syntax-specific options
+au Filetype python source ~/.vim/scripts/python.vim
