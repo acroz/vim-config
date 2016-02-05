@@ -60,3 +60,4 @@ endif
 
 " Syntax-specific options
 au Filetype python source ~/.vim/scripts/python.vim
+let g:vim_json_syntax_conceal = 0
