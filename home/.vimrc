@@ -59,5 +59,6 @@ if has("user_commands")
 endif
 
 " Syntax-specific options
-au Filetype python source ~/.vim/scripts/python.vim
+au Filetype python source ~/.vim/scripts/column80.vim
+au Filetype markdown source ~/.vim/scripts/column80.vim
 let g:vim_json_syntax_conceal = 0
