@@ -1,4 +1,4 @@
-" Set colume marker after column 80
+" Set column marker on column 80
 
 " Line length marker
-set colorcolumn=81
+set colorcolumn=80

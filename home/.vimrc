@@ -60,5 +60,6 @@ endif
 
 " Syntax-specific options
 au Filetype python source ~/.vim/scripts/column80.vim
+au Filetype python source ~/.vim/scripts/autotrimwhitespace.vim
 au Filetype markdown source ~/.vim/scripts/column80.vim
 let g:vim_json_syntax_conceal = 0
