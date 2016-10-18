@@ -1,22 +1,50 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-execute pathogen#infect()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" user packages
+" see http://vimawesome.com/ for some popular ones
+Plugin 'tpope/vim-sensible' " Some basic config
+Plugin 'Raimondi/delimitMate' " Auto close quotes etc.
+Plugin 'ervandew/supertab' " Tab auto completion
+Plugin 'chriskempson/base16-vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'nvie/vim-flake8'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 " Display line numbers
 set number
 
-" Colour Management
-if $TERM == "xterm-256color"
-    set t_Co=256
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
 endif
-set background=dark
-colorscheme monokai
 
-" Powerline
-" Requires systemwide installation, see for details:
-" http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
-"set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim/
-let g:airline_powerline_fonts = 1
 " Always show status line
 set laststatus=2
 
@@ -24,14 +52,27 @@ set laststatus=2
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Powerline
+let g:airline_powerline_fonts = 1
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+
 " Auto indent on return inside braces
 let delimitMate_expand_cr=1
 
-" Set paste switch to allow code pasting without ruining indentation
+" Shortcuts
+" Paste switch
 set pastetoggle=<F2>
+" Give a shortcut key to NERD Tree
+map <F3> :NERDTreeToggle<CR>
+" Ctrl-P fuzzy file search
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " Mouse interaction
-"set mouse=a
+" set mouse=a
 
 " Apply perl syntax highlighting to .com files
 au BufNewFile,BufRead *.com set filetype=perl
@@ -62,4 +103,3 @@ endif
 au Filetype python source ~/.vim/scripts/column80.vim
 au Filetype python source ~/.vim/scripts/autotrimwhitespace.vim
 au Filetype markdown source ~/.vim/scripts/column80.vim
-let g:vim_json_syntax_conceal = 0
